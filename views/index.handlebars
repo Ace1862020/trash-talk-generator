@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-10 mx-auto">
+      <div class="text-center my-5">
+        <p class="h3">你要對誰說幹話?</p>
+      </div>
+    </div>
+  </div>
+  <!-- Choose your friend -->
+  <form method="POST" action="/">
+    <div class="row">
+
+      <div class="col-sm-4 d-flex align-items-stretch">
+        <div class="card text-center">
+          <div class="card-header bg-transparent h5">工程師</div>
+          <div class="card-body text-success p-0">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+              class="card-img-top" alt="">
+          </div>
+          <div class="card-footer bg-transparent">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="colleague" id="engineer" value="engineer">
+              <label class="form-check-label" for="engineer">
+                ㄟ!我說那個誰!
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 d-flex align-items-stretch">
+        <div class="card text-center">
+          <div class="card-header bg-transparent h5">設計師</div>
+          <div class="card-body text-success p-0">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+              class="card-img-top" alt="">
+          </div>
+          <div class="card-footer bg-transparent">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="colleague" id="designer" value="designer">
+              <label class="form-check-label" for="designer">
+                今晚我想改點..
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 d-flex align-items-stretch">
+        <div class="card text-center">
+          <div class="card-header bg-transparent h5">創業家</div>
+          <div class="card-body text-success p-0">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+              class="card-img-top" alt="">
+          </div>
+          <div class="card-footer bg-transparent">
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="colleague" id="entrepreneur" value="entrepreneur">
+              <label class="form-check-label" for="entrepreneur">
+                嘖!你看看你阿
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Trash Generator button -->
+    <div class="row col-sm-12 d-flex bd-highlight mt-5">
+      <div class="col-sm-3">
+        <button class="btn btn-danger" type="submit">Generate</button>
+      </div>
+      <div class="form-group col-sm-9 flex-shrink-1">
+        <textarea class="form-control text-left" id="showTrashTalk" rows="3">
+          {{#if trashTalk}}
+            {{trashTalk}}
+          {{/if}}
+        </textarea>
+      </div>
+    </div>
+  </form>
+</div>
