@@ -3,7 +3,7 @@
 ## 功能描述 Features
 * 工程師、設計師、創業家，三位角色3選1
 * 點擊【Generate】，右邊的 textbox 就會產生一句話
-
+* 點擊【Generate】後，所選的選擇仍然會被保留
 
 ## 安裝與執行 - Installation and execution
 1. 開啟終端機 (Terminal) 或 (Git Bash) 到本機的專案位置:
