@@ -19,7 +19,8 @@
           </div>
           <div class="card-footer bg-transparent">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="colleague" id="engineer" value="engineer">
+              <input class="form-check-input" type="radio" name="colleague" id="engineer" value="engineer"
+                {{#ifit roles 'engineer'}} checked {{/ifit}}>
               <label class="form-check-label" for="engineer">
                 ㄟ!我說那個誰!
               </label>
@@ -37,7 +38,8 @@
           </div>
           <div class="card-footer bg-transparent">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="colleague" id="designer" value="designer">
+              <input class="form-check-input" type="radio" name="colleague" id="designer" value="designer"
+                {{#ifit roles 'designer'}} checked {{/ifit}}>
               <label class="form-check-label" for="designer">
                 今晚我想改點..
               </label>
@@ -55,7 +57,8 @@
           </div>
           <div class="card-footer bg-transparent">
             <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="colleague" id="entrepreneur" value="entrepreneur">
+              <input class="form-check-input" type="radio" name="colleague" id="entrepreneur" value="entrepreneur"
+                {{#ifit roles 'entrepreneur'}} checked {{/ifit}}>
               <label class="form-check-label" for="entrepreneur">
                 嘖!你看看你阿
               </label>
